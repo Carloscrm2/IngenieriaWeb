@@ -1,0 +1,51 @@
+div{
+    padding: 50px;
+    border: 2px solid black;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-bottom:0;
+}
+
+#div2{
+    padding: 30px;
+    border: 2px solid blue;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+#div3{
+    padding: 70px;
+    border: 2px solid red;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+#div4{
+    padding: 100px;
+    border: 2px solid pink;
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+
+
+p{
+    padding-left:10px;
+    padding-right:10px; 
+}
+
+section{
+    background-color: burlywood;
+    padding:15px;
+    border: 2px solid green;
+    margin: auto 8px;
+    height: 490px;
+    float: left;
+}
