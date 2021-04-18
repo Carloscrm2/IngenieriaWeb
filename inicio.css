@@ -1,5 +1,4 @@
 div{
-    padding: 50px;
     border: 2px solid black;
     margin-top: 0;
     margin-left: 4px;
@@ -22,16 +21,16 @@ div{
     margin-top: 0;
     margin-left: 4px;
     margin-right: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #div4{
-    padding: 100px;
     border: 2px solid pink;
     margin-top: 0;
     margin-left: 4px;
     margin-right: 5px;
     margin-bottom: 30px;
+    overflow:hidden;
 }
 
 
@@ -42,10 +41,34 @@ p{
 }
 
 section{
-    background-color: burlywood;
-    padding:15px;
     border: 2px solid green;
-    margin: auto 8px;
-    height: 490px;
+    height: 2000px;
+    width: 300px;
     float: left;
+    /*position: static;*/
+    /*margin-top: 1px;
+    margin-right: 10px;
+    margin-left:1px;*/
 }
+
+    img{
+        width:  269.97px;
+        height:179.98px;
+        position: static;
+        margin-left: 50px;
+        margin-right: 10px;
+        border: red 2px solid;
+    
+    }
+
+a,span{
+    width:  100px;
+    /*position: static;*/
+    margin-left: 50px;
+    margin-right: 10px;
+    display:inline-block;
+    border: red 2px solid;
+}
+
+    
+   
