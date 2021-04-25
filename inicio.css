@@ -33,14 +33,7 @@ div{
     overflow:hidden;
 }
 
-
-
-p{
-    padding-left:10px;
-    padding-right:10px; 
-}
-
-section{
+.menuizquierdo{
     border: 2px solid green;
     height: 2000px;
     width: 300px;
@@ -51,15 +44,15 @@ section{
     margin-left:1px;*/
 }
 
-    img{
-        width:  269.97px;
-        height:179.98px;
-        position: static;
-        margin-left: 50px;
-        margin-right: 10px;
-        border: red 2px solid;
+img{
+    width:  269.97px;
+    height:179.98px;
+    position: static;
+    margin-left: 50px;
+    margin-right: 10px;
+    border: red 2px solid;
     
-    }
+}
 
 a,span{
     width:  100px;
@@ -70,5 +63,3 @@ a,span{
     border: red 2px solid;
 }
 
-    
-   
