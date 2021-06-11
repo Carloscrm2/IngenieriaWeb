@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\Downloads\\Flores\\footer"
+		},
+		{
+			"path": "..\\..\\Downloads\\Flores\\.vscode"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Mujeres"
+	}
+}
