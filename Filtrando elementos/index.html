@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='/ayuda.html'>AYUDA</a></li>
+                <li><a href='http://'>MXN $</a></li>
+                <li><a href='http://'>FORMAS DE PAGO</a></li>
+            </ul>
+        </nav>
+        <p id='p1'>
+            MI CUENTA
+        </p>
+    </header>
+
+    <nav id='menu2'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='/index.html'>FLORES</a></li>
+            <li><a href='/RegalosMujeres.html'>REGALOS PARA MUJERES</a></li>
+            <li><a href='/RegalosHombres.html'>REGALOS PARA HOMBRES</a></li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <h1>Escoge un produto</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <!--Categorias-->
+                <hr>
+                <label>Categorias</label>
+                <hr>
+                <a href="#" class="category_item " category="all">Todo</a>
+                <a href="#" class="category_item" category="bautizo">Bautizo</a>
+                <a href="#" class="category_item" category="mejorate">Mejorate pronto</a>
+                <a href="#" class="category_item" category="romanticos">Romanticos</a>
+                <!--Precio-->
+                <hr>
+                <label>Precio</label>
+                <hr>
+                <a href="#" class="precio_item" price="$100-$299">$100-$299</a>
+                <a href="#" class="precio_item" price="$300-$599">$300-$599</a>
+                <a href="#" class="precio_item" price="$600-$899">$600-$899</a>
+                <a href="#" class="precio_item" price="$900-$1499">$900-$1499</a>
+                <a href="#" class="precio_item" price="$1500-mas">$1500-mas</a>
+                <!--
+                <label><input type="checkbox" class="category_item" category="all">Todo</label><br>
+                <label><input type="checkbox" class="category_item" category="bautizo">Bautizo</label><br>
+                <label><input type="checkbox" class="category_item" category="mejorate">Mejorate pronto</label><br>
+                <label><input type="checkbox" class="category_item" category="romanticos">Romanticos</label><br>
+                -->
+
+            </div>
+            <section class="products-list">
+                <!--Bautizo-->
+                <div class="product-item" category="bautizo" class="precio_item" price="$300-$499" class="card" style="width: 18rem;">
+                    <img src="/images/Bautizo/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>AMOR Y CALMA<span>$499.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="bautizo" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Bautizo/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>TRES MOTIVOS<span>$520.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="bautizo" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Bautizo/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>A TU LADO<span>$499.00</span></b></p>
+                    </div>
+                </div>
+
+                <!--Mejorate pronto-->
+
+                <div class="product-item" category="mejorate" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Mejorate pronto/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>COLORES ALEGRES<span>$310.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="mejorate" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Mejorate pronto/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>FELIZ DIA<span>$390.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="mejorate" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Mejorate pronto/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>ALEGRIA <span>$480.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <!--Romanticos-->
+
+                <div class="product-item" category="romanticos" class="precio_item" price="$100-$299" class="card" style="width: 18rem;">
+                    <img src="/images/Romanticos/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>DETALLE AMOROSO<span>$250.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="romanticos" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Romanticos/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>DOCE MOMENTOS<span>$490.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="romanticos" class="precio_item" price="$1500-mas" class="card" style="width: 18rem;">
+                    <img src="/images/Romanticos/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>100 ROSAS ROJAS <span>$2550.00</span></b></p>
+                    </div>
+                </div>
+
+        </div>
+        </section>
+    </div>
+    </div>
+</body>
+<footer class="divsitos">
+    <div>
+        <h3 class="foote">CONTACTANOS</h3>
+        <p class="pfoote">CDMX: 553897702 <br> MEXICO: 014455263878</p>
+        <img class="img1" src="/images/footer/azap_pay-min.png" />
+    </div>
+
+    <div>
+        <h3 class="foote">SERVICIO AL CLIENTE</h3>
+        <p class="pfoote">
+            Contáctanos <br>
+            Preguntas frecuentes <br>
+            Políticas de reembolso <br>
+            Términos y condiciones <br>
+            Sé nuestro proveedor
+        </p>
+    </div>
+
+    <div>
+        <h3 class="foote">ENVIO</h3>
+        <p class="pfoote">
+            Rastreo de pedido <br>
+            Políticas de envío generales <br>
+            Políticas de envío de flores <br>
+            Políticas de privacidad
+        </p>
+    </div>
+
+    <div>
+        <h3 class="foote">AZAP</h3>
+        <p class="pfoote">
+            Flores <br>
+            Flores CDMX <br>
+            Ocasiones <br>
+            Regalos Originales <br>
+            Galletas y Pasteles <br>
+            Blog
+        </p>
+    </div>
+
+    <div id="linea">
+    </div>
+
+    <p id="aroba">
+        UPIITA.COM © 2021
+    </p>
+</footer>
+
+</html>

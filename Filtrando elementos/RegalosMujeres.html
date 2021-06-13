@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalos para mujeres</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='/ayuda.html'>AYUDA</a></li>
+                <li><a href='http://'>MXN $</a></li>
+                <li><a href='http://'>FORMAS DE PAGO</a></li>
+            </ul>
+        </nav>
+        <p id='p1'>
+            MI CUENTA
+        </p>
+    </header>
+
+    <nav id='menu2'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='/index.html'>FLORES</a></li>
+            <li><a href='/RegalosMujeres.html'>REGALOS PARA MUJERES</a></li>
+            <li><a href='/RegalosHombres.html'>REGALOS PARA HOMBRES</a></li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <h1>Escoge un produto</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <!--Categorias-->
+                <hr>
+                <label>Categorias</label>
+                <hr>
+                <a href="#" class="category_item " category="all">Todo</a>
+                <a href="#" class="category_item" category="brunch">Brunch sorpresa</a>
+                <a href="#" class="category_item" category="aniversario">Regalos de aniversario</a>
+                <a href="#" class="category_item" category="cumpleaños">Regalos de cumpleaños</a>
+                <!--Precio-->
+                <hr>
+                <label>Precio</label>
+                <hr>
+                <a href="#" class="precio_item" price="$100-$299">$100-$299</a>
+                <a href="#" class="precio_item" price="$300-$599">$300-$599</a>
+                <a href="#" class="precio_item" price="$600-$899">$600-$899</a>
+                <a href="#" class="precio_item" price="$900-$1499">$900-$1499</a>
+                <a href="#" class="precio_item" price="$1500-mas">$1500-mas</a>
+                <!--
+                <label><input type="checkbox" class="category_item" category="all">Todo</label><br>
+                <label><input type="checkbox" class="category_item" category="bautizo">Bautizo</label><br>
+                <label><input type="checkbox" class="category_item" category="mejorate">Mejorate pronto</label><br>
+                <label><input type="checkbox" class="category_item" category="romanticos">Romanticos</label><br>
+                -->
+
+            </div>
+            <section class="products-list">
+                <!--Brunch sorpresa-->
+                <div class="product-item" category="brunch" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Brunch sorpresa/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>GELLETOSO<span>$599.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="brunch" class="precio_item" price="$600-$899" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Brunch sorpresa/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>BUENOS DIAS TQM<span>$710.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="brunch" class="precio_item" price="$300-$599" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Brunch sorpresa/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>DULCE GRADUACION<span>$480.00</span></b></p>
+                    </div>
+                </div>
+
+                <!--Regalos aniversario-->
+
+                <div class="product-item" category="aniversario" class="precio_item" price="$600-$899" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos aniversario/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>BESOS - GLOBO DE HELIO<span>$600.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="aniversario" class="precio_item" price="$600-$899" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos aniversario/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>TARTALETA Y VINO<span>$720.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="aniversario" class="precio_item" price="$900-$1499" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos aniversario/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>HAPPINESS - JOYERIA<span>$1120.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <!--Regalos de cumpleaños-->
+
+                <div class="product-item" category="cumpleaños" class="precio_item" price="$900-$1499" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos de cumpleaños/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>SIRENA Y CORAZONES<span>$1200.00</span></b></p>
+                    </div>
+                </div>
+
+                <div class="product-item" category="cumpleaños" class="precio_item" price="$600-$899" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos de cumpleaños/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>PASTEL DE ZANAHORIA<span>$640.00</span></b></p>
+                    </div>
+                </div>
+
+
+                <div class="product-item" category="cumpleaños" class="precio_item" price="$600-$899" class="card" style="width: 18rem;">
+                    <img src="/images/Regalos Mujeres/Regalos de cumpleaños/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><b>PARA UN INCREIBLE DIA<span>$620.00</span></b></p>
+                    </div>
+                </div>
+
+        </div>
+        </section>
+    </div>
+    </div>
+</body>
+<footer class="divsitos">
+    <div>
+        <h3 class="foote">CONTACTANOS</h3>
+        <p class="pfoote">CDMX: 553897702 <br> MEXICO: 014455263878</p>
+        <img class="img1" src="/images/footer/azap_pay-min.png" />
+    </div>
+
+    <div>
+        <h3 class="foote">SERVICIO AL CLIENTE</h3>
+        <p class="pfoote">
+            Contáctanos <br>
+            Preguntas frecuentes <br>
+            Políticas de reembolso <br>
+            Términos y condiciones <br>
+            Sé nuestro proveedor
+        </p>
+    </div>
+
+    <div>
+        <h3 class="foote">ENVIO</h3>
+        <p class="pfoote">
+            Rastreo de pedido <br>
+            Políticas de envío generales <br>
+            Políticas de envío de flores <br>
+            Políticas de privacidad
+        </p>
+    </div>
+
+    <div>
+        <h3 class="foote">AZAP</h3>
+        <p class="pfoote">
+            Flores <br>
+            Flores CDMX <br>
+            Ocasiones <br>
+            Regalos Originales <br>
+            Galletas y Pasteles <br>
+            Blog
+        </p>
+    </div>
+
+    <div id="linea">
+    </div>
+
+    <p id="aroba">
+        UPIITA.COM © 2021
+    </p>
+</footer>
+
+</html>
