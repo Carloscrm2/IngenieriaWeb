@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.wrap > h1{
+    color: #494B4D;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.wrap > h1:after{
+    width: 100px;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 20px 0;
+}
+
+.store-wrapper{
+    display: flex;
+
+}
+
+.category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+.category_list .category_item{
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom:20px;
+    background-color: gray;
+
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.category_list .precio_item{
+	display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom:20px;
+    background-color: gray;
+
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.category_list .ct_item-active{
+    background: goldenrod;
+}
+/*productos*/
+.products-list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-list .product-item{
+    width: 22%;
+    margin-left: 1%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22) ;
+
+    /*Animacion*/
+    transition: all .4s;
+}
+
+.products-list .product-item img{
+    width: 100%;
+}
+
+.card-body p b{
+    display: flex;
+    justify-content:space-between;
+}
+
+.divsitos{
+	display: flex;
+	background: #000;
+	justify-content:  space-around;
+	height: 430px;
+	padding-top: 30px;
+    flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.foote{
+	text-align: start;
+    color: rgb(255, 255, 255);
+	font-size: 22px;
+}
+
+.pfoote{
+	line-height: 2em; 
+	text-align: start;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+.divsitos div
+{
+	margin: 20px;
+    width: 20%;
+	/* border: 2px solid rgb(19, 61, 44); */
+	
+}
+
+
+#linea{
+	width: 90%;
+	border: 1px solid rgb(255, 255, 255);
+}
+
+#aroba{
+	text-align: start;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.img1{
+    width: 222px;
+    height: 100.66px;
+    margin: 32px 0px 0px;
+}
+
+header{
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+#p1{
+
+    border: 1px solid white;
+    clear: right;
+    text-align: center;
+    padding-right: 11px;
+	padding-top: 50px;
+}
+
+h2{
+    background: rgb(27, 23, 23);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.829);
+} 
+
+#menu {
+	background: #FFFFFF;
+	color: #FFF;
+	padding-left: 18px;
+	border-radius: 10px;
+    float: left;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #000000;
+	background: #FFFFFF;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+#menu2 {
+	background: #FFFFFF;
+	color: #FFF;
+	height: 45px;
+    width: 100%;
+    padding-left: 350px;
+	padding-right: 195px;
+    border: 2px solid rgba(184, 155, 155, 0.692);
+    margin-bottom: 50px;
+}
+#menu2 ul, #menu2 li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#menu2 ul {
+	width: 100%;
+}
+#menu2 li {
+	float: left;
+	display: inline;
+	position: relative;
+
+}
+#menu2 a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+}
+#menu2 a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu2 li a:hover {
+	color: #FFFFFF;
+	background: #EBB73F;
+}
+#menu2 input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu2 label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu2 label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu2 ul.sub-menus2{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu2 ul.sub-menus2 li {
+	display: block;
+	width: 100%;
+}
+#menu2 ul.sub-menus2 a {
+	color: #000000;
+	font-size: 16px;
+}
+#menu2 li:hover ul.sub-menus2 {
+	display: block
+}
+#menu2 ul.sub-menus2 a:hover{
+	background: #F2F2F2;
+	color: #000000;
+}
+@media screen and (max-width: 800px){
+	#menu2 {position:relative}
+	#menu2 ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu2 ul.sub-menus2 {width:100%;position:static;}
+	#menu2 ul.sub-menus2 a {padding-left:30px;}
+	#menu2 li {display:block;float:none;width:auto;}
+	#menu2 input, #menu2 label {position:absolute;top:0;left:0;display:block}
+	#menu2 input {z-index:4}
+	#menu2 input:checked + label {color:white}
+	#menu2 input:checked + label:before {content:"\00d7"}
+	#menu2 input:checked ~ ul {display:block}
+}
